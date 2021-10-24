@@ -1,4 +1,4 @@
-# Ngsheet
+# Ngsheets
 
 Upload and parse spreadsheet files with drag & drop functionality with Angular.
 
