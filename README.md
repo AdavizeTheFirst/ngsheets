@@ -1,6 +1,6 @@
 # Ngsheet
 
-Upload and parse spreadsheet files with drag & drop functionality
+Upload and parse spreadsheet files with drag & drop functionality with Angular
 
 # Supported file types
 .csv .xls
