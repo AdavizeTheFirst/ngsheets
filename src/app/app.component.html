@@ -1,1 +1,30 @@
-<h1>Currentyly in Development :)</h1>
+<p style="text-align: center; color: rgb(221, 128, 128); margin: 0 0 15px 0;">!!! This Project is still in development !!!</p>
+
+<div class="container" [ngClass]="styleClasses">
+  <div class="drag-area" (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave()" (drop)="onDragDrop($event)">
+    <input #fileInput type="file" hidden aria-hidden="true">
+    <ng-container *ngIf="droppedFile == undefined">
+      <div>
+        <p class="instruction-text">
+          Drag and drop your spreadsheet file here or click to open explorer.
+        </p>
+        <p class="info-text">
+          .csv, .xlsx, and .xls file types are supported
+        </p>
+        <p class="info-text">Max. file size -</p>
+      </div>
+
+    </ng-container>
+    <ng-container *ngIf="droppedFile != undefined">
+      <div>
+        <p class="file-name">
+          {{ droppedFile?.name }}
+        </p>
+        <p class="file-size">{{ droppedFile?.size }}B</p>
+      </div>
+      <button (click)="onDeleteClick()" class="remove-file">Delete</button>
+    </ng-container>
+  </div>
+</div>
+<noscript>Javascript has to be enabled for this component to work</noscript>
