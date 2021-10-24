@@ -1,6 +1,8 @@
-# Ngsheet
+# Ngsheets
 
-Upload and parse spreadsheet files with drag & drop functionality
+Upload and parse spreadsheet files with drag & drop functionality with Angular.
+
+[Click here for live demo](https://ngsheet.netlify.app).
 
 # Supported file types
 .csv .xls
