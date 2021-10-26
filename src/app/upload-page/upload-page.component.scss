@@ -1,0 +1,49 @@
+@import "~src/assets/mixins.scss";
+
+.container {
+    background-color: white;
+    width: 85vw;
+    max-width: 550px;
+    margin: auto;
+    min-height: 200px;
+    border-radius: 20px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.active {
+        background-color: rgb(196, 255, 218);
+        border: 3px dashed $theme-accemt;
+    }
+}
+
+.drag-area {
+    text-align: center;
+}
+
+.instruction-text, .file-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.btn {
+    padding: 10px 20px;      
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.952);
+    background-color: rgb(159, 233, 253);
+    font-size: 1em;    
+    font-weight: 600;
+    border: 1px solid rgb(66, 66, 66);
+}
+
+.remove-btn {
+    margin-top: 20px;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(87, 182, 208);
+    }
+}
+.next-btn {
+
+}

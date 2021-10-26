@@ -18,7 +18,17 @@ body {
     width: 100%;
     background-color: $theme-primary;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-size: 16px;
+    padding: 36px 15px;
+}
+
+.btn {
+    padding: 10px 20px;      
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.952);
+    background-color: rgb(159, 233, 253);
+    font-size: 1em;    
+    font-weight: 600;
+    border: 1px solid rgb(66, 66, 66);
 }
